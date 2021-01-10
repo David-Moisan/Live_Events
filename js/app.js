@@ -53,3 +53,19 @@ countdown();
 setInterval(countdown, 1000);
 
 /**================================================================================== */
+/**Push */
+
+const infosPush = "Le festival Nation Sounds ELECTRO BASS / DUB MUSIC / RAP";
+const Push = document.getElementById('push');
+
+let index = 0;
+
+function writePushText() {
+    Push.innerHTML = infosPush.slice(0, index);
+    index++;
+    if(index > infosPush.length) {
+        index = 0;
+    }
+}
+
+setInterval(writePushText, 100);

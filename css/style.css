@@ -300,6 +300,47 @@ html {
     letter-spacing: 2px;
     transition: .3s;
 }
+/**================================================================================== */
+
+/**Info Page */
+/**================================================================================== */
+
+.infos_page {
+    position: absolute;
+    width: 100%;
+    top: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #221a1a;
+}
+
+/**Push Infos */
+/**================================================================================== */
+
+.border_gradient {
+    height: 75px;
+    min-width: max-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: url('../src/bande.png');
+    background-position: center;
+}
+
+.border_gradient p {
+    padding: 25px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+
 
 /**Media Query */
 /**================================================================================== */
