@@ -246,6 +246,28 @@ html {
     color: #A065A2;
 }
 
+.scroll_btn {
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    font-size: 2em;
+    animation: scrollAnim .5s linear 1s infinite;
+}
+
+@keyframes scrollAnim {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(-0.5px);
+    }
+}
+
 /**Nav Menu */
 /**================================================================================== */
 
@@ -354,9 +376,12 @@ html {
         font-size: .75em;
     }
 
-    .social li a {
-        transform: scale(1) translateX(55px);
-        transition: .2s;
+    .social.active {
+        display: none;
+    }
+
+    .scroll_btn {
+        left: 75%;
     }
 
     .toggle_nav,
