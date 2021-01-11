@@ -69,3 +69,22 @@ function writePushText() {
 }
 
 setInterval(writePushText, 100);
+
+/**================================================================================== */
+/**Carousel */
+
+/*const carouselCard = document.querySelector('.image_container');
+
+let index2 = 0;
+
+function runCarousel() {
+    index2++;
+
+    if (index2 > carouselCard.length - 2) {
+        index2 = 0;
+    }
+
+    carouselCard.style.transform = `translateX(${-index2 * 100}%)`;
+}
+
+setInterval(runCarousel, 2000);*/

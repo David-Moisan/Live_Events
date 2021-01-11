@@ -1,6 +1,7 @@
 /**Règles générales */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 * {
     box-sizing: border-box;
@@ -328,6 +329,7 @@ html {
     right: 0;
     background: url('../src/bande.png');
     background-position: center;
+
 }
 
 .border_gradient p {
@@ -337,6 +339,90 @@ html {
     color: #fff;
 }
 
+
+/**Artiste Container */
+/**================================================================================== */
+
+.infos_container {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    background: url('../src/plante.png');
+    background-repeat: round;
+    background-position: top -200px right 275px;
+    background-size: auto;
+}
+
+.infos_container h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 1.75em;
+    text-align: center;
+    margin: 20px;
+}
+
+.artiste_container {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 700px;
+    margin: 50px;
+}
+
+.infos_container span {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1em;
+}
+
+/** MANQUE LA PARTIE MEDIA QUERIES !!!!!!!!!!!!!!!!! */
+
+/**Carousel */
+/**================================================================================== */
+
+.carousel {
+    height: 400px;
+    overflow: hidden;
+    margin-top: 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+}
+
+.image_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    transition: transform .3s linear;
+    transform: translateX(0);
+}
+
+.image_container img {
+    height: 200px;
+    widows: 200px;
+    margin-bottom: 20px;
+    border-radius: 500%;
+    object-fit: cover;
+}
+
+.image_container h2 {
+    border: 2px solid #221a1a;
+    padding: 10px 80px;
+    margin-bottom: -150px;
+    margin-left: -60px;
+}
+
+.image_container p {
+    max-width: 350px;
+    text-align: justify;
+    position: relative;
+    top: -90px;
+    right: 50px;
+    height: 200px;
+}
+
+/** MANQUE LA PARTIE MEDIA QUERIES !!!!!!!!!!!!!!!!! */
 
 
 
