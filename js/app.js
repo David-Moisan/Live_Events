@@ -73,7 +73,7 @@ setInterval(writePushText, 100);
 /**================================================================================== */
 /**Carousel */
 
-/*const carouselCard = document.querySelector('.image_container');
+/*const carouselCard = document.querySelectorAll('.image_container, img');
 
 let index2 = 0;
 
