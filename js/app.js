@@ -56,14 +56,17 @@ setInterval(countdown, 1000);
 /**Push */
 
 const infosPush = "Le festival Nation Sounds ELECTRO BASS / DUB MUSIC / RAP";
+const secondInfosPush = "Rendez-vous à la buvette";
 const Push = document.getElementById('push');
+const secondPush = document.getElementById('secondPush');
 
 let index = 0;
 
 function writePushText() {
     Push.innerHTML = infosPush.slice(0, index);
+    secondPush.innerHTML = secondInfosPush.slice(0, index)
     index++;
-    if(index > infosPush.length) {
+    if(index > infosPush.length && secondInfosPush.length) {
         index = 0;
     }
 }
