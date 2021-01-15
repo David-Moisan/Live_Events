@@ -578,7 +578,7 @@ html {
     content: "";
     display: block;
     width: 100%;
-    padding-top: 100%; /**a voir */
+    padding-top: 100%;
 }
 
 .carousel_thumbnails label > img {
@@ -718,7 +718,8 @@ html {
 }
 
 
-.footer_container {
+.footer_container
+{
     position: absolute;
     width: 100%;
     top: 411vh;
