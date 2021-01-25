@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Events | Nation Sounds</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styleOfProgram.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header_container">
+        <div class="logo_events">
+            <img src="./src/logo_wht.png" alt="Logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="#">Infos</a></li>
+                <li><a href="#">Actus</a></li>
+                <li><a href="./billet.html">Billeterie</a></li>
+                <li><a href="./contact.html">Contactez-nous</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact_section">
+        <h1>Contactez-nous</h1>
+        <h3>Nation Sounds</h3>
+        <div class="contact_container">
+            <form action="" method="POST" class="form_container">
+                <div class="first_block">
+                    <label for="name" class="form_label">
+                        * Nom :
+                    </label>
+                    <input type="text" id="name" class="form_input" name="name" aria-required="true" size="50">
+                </div>
+                <div class="second_block">
+                    <label for="firstname" class="form_label">
+                        * Prénom :
+                    </label>
+                    <input type="text" id="firstname" class="form_input" name="firstname" aria-required="true" size="46">
+                </div>
+                <div class="three_block">
+                    <label for="phone" class="form_label">
+                        Téléphone :
+                    </label>
+                    <input type="number" id="phone" class="form_input" name="phone" aria-required="true" size="46">
+                </div>
+                <div class="four_block">
+                    <label for="email" class="form_label">
+                        * E-mail :
+                    </label>
+                    <input type="email" id="email" class="form_input" name="email" aria-required="true" size="46">
+                </div>
+                <div class="six_block">
+                    <label for="message" class="form_label message">
+                        * Message :
+                    </label>
+                    <textarea class="form_textarea" name="message" id="message" cols="40" rows="10" aria-required="true"></textarea>
+                </div>
+                <div class="seven_block">
+                    <input type="checkbox" name="check_rgpd" value="1">
+                    <span class="rgpd">
+                        J'accepte d'être contacté.e par Live Events dans le cadre de ma demande.
+                    </span>
+                </div>
+                <div class="height_block">
+                    <button class="form-btn" id="submit" type="submit" name="submit">
+                        Envoyer
+                    </button>
+                </div>
+                <div class="nine_block">
+                    <span class="form_note"><strong>*</strong> champs obligatoires</span>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="footer_container__two">
+        <footer>
+            <div class="nav_left">
+                <h3>Accès rapide</h3>
+                <ul>
+                    <li><a href="./index.html">Accueil</a></li>
+                    <li><a href="#push">Infos</a></li>
+                    <li><a href="#">Actus</a></li>
+                    <li><a href="#">Billeterie</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="address_center">
+                <h3>Lieu</h3>
+                <p>Plaine de Courno</p>
+                <p>75 500 Paris</p>
+            </div>
+            <div class="social_right">
+                <h3>Suivez-nous</h3>
+                <ul>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com/" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/" target="_blank">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+                <a class="none" href="mailto:nationsounds@mail.com">nationsounds@mail.com</a>
+            </div>
+            <div class="logo_top">
+                <a href="#top">
+                    <img src="./src/logo_wht.png" alt="logo">
+                </a>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>

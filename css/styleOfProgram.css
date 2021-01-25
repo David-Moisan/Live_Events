@@ -1,8 +1,8 @@
 
 body {
     background-image: url('../src/plante.png');
-    background-size: 700px;
-    background-position: top -50px right -300px;
+    background-size: 1000px;
+    background-position: top -100px right -300px;
     background-repeat: no-repeat;
     background-color: #fff;
 }
@@ -53,7 +53,8 @@ body {
 /**SECTION */
 /**================================================================================== */
 
-.programmation_container {
+.programmation_container,
+.billet_container {
     display: block;
     width: 100%;
     height: 90vh;
@@ -63,20 +64,25 @@ body {
     background-position: center top;
 }
 
-.programmation_container h1 {
+.programmation_container h1,
+.billet_container h1 ,
+.contact_section h1 {
     text-align: center;
     font-family: 'Kaushan Script', cursive;
     color: #273165;
     font-size: 2.5em;
 }
 
-.programmation_container h3 {
+.programmation_container h3,
+.billet_container h3,
+.contact_section h3 {
     text-align: center;
     color: #273165;
     font-weight: 500;
+    margin-bottom: -70px;
 }
 
-.list_container {
+.list_container{
     position: relative;
     top: 25%;
     display: grid;
@@ -117,6 +123,150 @@ body {
 }
 
 
+/**BILLET */
+/**================================================================================== */
+
+.price_container {
+    position: relative;
+    top: 25%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr;
+    grid-gap: 10px;
+    grid-auto-flow: row;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.price_container div {
+    background-image: linear-gradient(135deg, #273165 0%, #A065A2 100%);
+    max-width: 200px;
+    height: 250px;
+    text-align: center;
+    margin-left: 22%;
+}
+
+.price_container div > p {
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.price_container div > button {
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 1.5em;
+    align-items: center;
+    background: transparent;
+    border-color: #fff;
+    color: #fff;
+    outline: none;
+}
+
+.price_container div > button:hover {
+    background: #fff;
+    color: #221a1a;
+    transition: .5s;
+}
+
+.price_container div:nth-child(4) {
+    grid-column:2;
+    margin: 50px 0;
+    height: 200px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    max-width: 427px !important;
+}
+
+.price_container div:nth-child(4) > button {
+    margin-top: 30px;
+}
+
+.facility_payment p {
+    margin-top: 15px;
+}
+
+.facility_payment p:nth-child(2) {
+    font-size: 1em;
+}
+
+
+/**FORM */
+/**================================================================================== */
+
+.contact_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form_container {
+    background: url('../src/fond.png');
+    padding: 50px;
+    margin-top: -50px;
+    display: block;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.form_label {
+    display: block;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+.form_input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    border: none;
+    width: 100%;
+    height: 25px;
+    padding: 0;
+    border-bottom: 1px solid #fff;
+    background: 0 0;
+    color: currentColor;
+    font-family: inherit;
+    margin-bottom: 10px;
+}
+
+.form_textarea {
+    width: 100%;
+    border-radius: 0;
+    border: .5px solid #fff;
+    color: currentColor;
+    background: 0 0;
+    font-size: 1em;
+    line-height: 1.4;
+    margin-top: 10px;
+}
+
+.form-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: currentColor;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.form-btn:hover {
+    background-color: #fff;
+    color: #221a1a;
+    transition: .3s;
+}
+
+.form_note {
+    font-size: 11px;
+}
+
+
 /**FOOTER */
 /**================================================================================== */
 
@@ -124,7 +274,7 @@ body {
     position: absolute;
     width: 100%;
     top: 100vh;
-    height: 100vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;

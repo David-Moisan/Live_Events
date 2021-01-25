@@ -310,7 +310,7 @@ html {
     position: absolute;
     width: 100%;
     top: 100vh;
-    height: 100vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -513,8 +513,8 @@ html {
     left: 25%;
     right: 0;
     bottom: 20px;
-    width: 450px;
-    height: 450px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
 }
 
@@ -691,10 +691,18 @@ html {
     z-index: 500;
 }
 
+.link_ecom .billeterie a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.link_ecom .billeterie a:hover {
+    color: #221a1a;
+}
+
 .link_ecom .billeterie:hover {
     letter-spacing: 2px;
     background-color: #fff;
-    color: #221a1a;
     transition: .3s;
 }
 
