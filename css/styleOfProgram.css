@@ -54,7 +54,8 @@ body {
 /**================================================================================== */
 
 .programmation_container,
-.billet_container {
+.billet_container,
+.contact_container {
     display: block;
     width: 100%;
     height: 90vh;
@@ -135,6 +136,8 @@ body {
     grid-gap: 10px;
     grid-auto-flow: row;
     grid-auto-rows: minmax(100px, auto);
+    max-width: 100%;
+    width: 100%;
 }
 
 .price_container div {
@@ -160,6 +163,7 @@ body {
     border-color: #fff;
     color: #fff;
     outline: none;
+    cursor: pointer;
 }
 
 .price_container div > button:hover {
@@ -272,6 +276,7 @@ body {
 
 .footer_container__two {
     position: absolute;
+    max-width: 100%;
     width: 100%;
     top: 100vh;
     height: 70vh;
@@ -389,9 +394,83 @@ body {
 /**================================================================================== */
 /**MEDIA */
 
+@media(max-width: 1024px) {
+
+    .price_container{
+        grid-gap: 0px;
+        width: 70%;
+        left: 15%;
+    }
+
+    .price_container > div:nth-child(4) {
+        height: 260px;
+    }
+
+    .contact_container {
+        position: absolute;
+        top: 20%;
+    }
+
+    .footer_container__two {
+        flex-direction: column;
+        top: 120vh;
+    }
+
+    .footer_container__two footer div {
+        max-width: 90px;
+    }
+
+    .footer_container__two footer div > h3 {
+        font-size: .9em;
+    }
+
+    .footer_container__two footer .nav_left ul li a {
+        font-size: .7em;
+        padding: .5rem;
+    }
+
+    .footer_container__two footer .address_center p {
+        font-size: .7em;
+    }
+
+    .footer_container__two footer .social_right ul li a {
+        font-size: 25px;
+        padding: 5px;
+    }
+
+    .footer_container__two footer .social_right a {
+        font-size: .6em;
+    }
+
+    .footer_container__two footer .logo_top a img {
+        width: 104.5px;
+        height: 104.5px;
+    }
+
+}
+
+
 @media(max-width: 768px) {
     .header_container .navbar {
         left: 5%;
+    }
+
+    .price_container > div p {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    .price_container > div button {
+        font-size: 16px;
+    }
+
+    .price_container > div:nth-child(4) {
+        height: 260px;
+    }
+
+    .contact_container {
+        position: absolute;
+        top: 20%;
     }
 }
 
@@ -414,6 +493,34 @@ body {
         font-weight: 500;
     }
 
+    .price_container{
+        grid-template-columns: min-content;
+        left: 25%;
+    }
+
+    .price_container > div {
+        margin-top: 10px;
+        width: min-content;
+        height: min-content;
+        grid-column: 1;
+        padding: 10px;
+    }
+
+    .price_container > div:nth-child(4) {
+        width: max-content;
+        position: absolute;
+        top: 100%;
+        left: -100%;
+    }
+
+    .price_container > div p {
+        font-size: 18px;
+    }
+
+    .price_container > div button {
+        font-size: 18px;
+    }
+
     .list_container div > h4 {
         font-size: 1em;
 
@@ -427,8 +534,14 @@ body {
         margin-left: 45%;
     }
 
+    .contact_container {
+        position: absolute;
+        top: 40%;
+    }
+
     .footer_container__two {
         flex-direction: column;
+        top: 150vh;
     }
 
     .footer_container__two footer div {
@@ -463,11 +576,67 @@ body {
     }
 }
 
+@media (max-width:375px) {
+    .programmation_container {
+        height: 70vh;
+    }
+
+    .contact_container {
+        width: 80%;
+        left: 10%;
+    }
+
+    .footer_container__two {
+        top: 160vh;
+    }
+
+    .footer_container__two footer .social_right ul li a {
+        font-size: 21px;
+    }
+
+    .price_container{
+        grid-template-columns: min-content;
+        left: 25%;
+    }
+
+    .price_container > div {
+        margin-top: 10px;
+        width: min-content;
+        height: min-content;
+        grid-column: 1;
+        padding: 10px;
+    }
+
+    .price_container > div:nth-child(4) {
+        width: max-content;
+        position: absolute;
+        top: 100%;
+        bottom: 15%;
+        left: -110%;
+    }
+
+    .price_container > div p {
+        font-size: 18px;
+    }
+
+    .price_container > div button {
+        font-size: 18px;
+    }
+
+}
+
 
 @media(max-width: 320px) {
     .header_container .navbar {
         font-size: 0.5em;
         left: 15%;
+    }
+
+    .price_container > div:nth-child(4) {
+        width: max-content;
+        position: absolute;
+        top: 100%;
+        left: -165%;
     }
 
     .footer_container__two footer div {

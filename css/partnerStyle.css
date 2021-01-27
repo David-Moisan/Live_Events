@@ -1,0 +1,315 @@
+.partner {
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner_container {
+    position: absolute;
+    top: 20%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: auto;
+    grid-gap: 10px;
+    width: max-content;
+}
+
+.item {
+    width: 200px;
+    text-align: center;
+    color: #fff;
+    background-color: #A065A2;
+    cursor: pointer;
+    padding: 5px;
+    transition: .3s ease-in-out;
+}
+
+.item:hover {
+    background-color: #273165;
+    transform: scale(1.2);
+    transition: all .3s ease-in-out;
+}
+
+.item  a {
+    text-decoration: none;
+    color: #221a1a;
+}
+
+.item a:hover {
+    color: #fff;
+}
+
+/**FOOTER */
+/**================================================================================== */
+
+.footer_container__partner {
+    position: absolute;
+    width: 100%;
+    top: 150vh;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #273165;
+    color:#fff;
+}
+
+.footer_container__partner footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex: 1 1 1;
+    flex-direction: row;
+}
+
+.footer_container__partner footer div > h3 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.footer_container__partner footer .nav_left {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+
+.footer_container__partner footer .nav_left ul {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.footer_container__partner footer .nav_left ul li {
+    margin-top: 10px;
+}
+
+
+.footer_container__partner footer .nav_left ul li a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 1.1;
+    font-size: 1.2em;
+    transition: .3s;
+}
+
+
+.footer_container__partner footer .nav_left ul li a:hover {
+    letter-spacing: 2px;
+    transition: .3s;
+    color: #A065A2;
+}
+
+
+.footer_container__partner footer .address_center {
+    position: absolute;
+    top: 25%;
+}
+
+.footer_container__partner footer .address_center h3 {
+    margin-bottom: 30px;
+}
+
+.footer_container__partner footer .address_center p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.footer_container__partner footer .social_right {
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer_container__partner footer .social_right h3 {
+    margin-bottom: 30px;
+}
+
+.footer_container__partner footer .social_right ul {
+    list-style: none;
+}
+
+.footer_container__partner footer .social_right ul li {
+    display: inline-block;
+}
+
+.footer_container__partner footer .social_right ul li a {
+    color: #fff;
+    font-size: 50px;
+    padding: 15px;
+}
+
+.footer_container__partner footer .social_right ul li a:hover {
+    color: #A065A2;
+}
+
+.footer_container__partner footer .social_right a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer_container__partner footer .logo_top {
+    position: absolute;
+    bottom: 50px;
+    border-radius: 50%;
+    animation: moveForTop 1s linear 1s infinite;
+}
+
+/**MEDIA */
+/**================================================================================================================= */
+
+@media(max-width: 1024px) {
+
+    .partner_container {
+        grid-gap: 5px;
+    }
+
+    .item {
+        width: 150px;
+        height: 200px;
+    }
+
+    .item  a > img {
+        width: 100px;
+    }
+
+    .footer_container__partner {
+        flex-direction: column;
+        top: 150vh;
+    }
+
+    .footer_container__partner footer div {
+        max-width: 90px;
+    }
+
+    .footer_container__partner footer div > h3 {
+        font-size: .9em;
+    }
+
+    .footer_container__partner footer .nav_left ul li a {
+        font-size: .7em;
+        padding: .5rem;
+    }
+
+    .footer_container__partner footer .address_center p {
+        font-size: .7em;
+    }
+
+    .footer_container__partner footer .social_right ul li a {
+        font-size: 25px;
+        padding: 5px;
+    }
+
+    .footer_container__partner footer .social_right a {
+        font-size: .6em;
+    }
+
+    .footer_container__partner footer .logo_top a img {
+        width: 104.5px;
+        height: 104.5px;
+    }
+}
+
+@media(max-width: 768px) {
+
+}
+
+@media(max-width: 425px) {
+    .partner_container {
+        grid-gap: 2.5px;
+    }
+
+    .item {
+        width: 100px;
+        height: 200px;
+    }
+
+    .item  a > img {
+        max-width: 80px;
+    }
+
+    .footer_container__partner {
+        flex-direction: column;
+        top: 150vh;
+    }
+
+    .footer_container__partner footer div {
+        max-width: 115px;
+    }
+
+    .footer_container__partner footer div > h3 {
+        font-size: .9em;
+    }
+
+    .footer_container__partner footer .nav_left ul li a {
+        font-size: .7em;
+        padding: .5rem;
+    }
+
+    .footer_container__partner footer .address_center p {
+        font-size: .7em;
+    }
+
+    .footer_container__partner footer .social_right ul li a {
+        font-size: 25px;
+        padding: 5px;
+    }
+
+    .footer_container__partner footer .social_right a {
+        font-size: .6em;
+    }
+
+    .footer_container__partner footer .logo_top a img {
+        width: 104.5px;
+        height: 104.5px;
+    }
+}
+
+@media(max-width: 375px) {
+    .footer_container__partner {
+        top: 160vh;
+    }
+
+    .footer_container__partner footer .social_right ul li a {
+        font-size: 21px;
+    }
+}
+
+@media(max-width: 320px) {
+    .footer_container__partner footer div {
+        max-width: 35px;
+    }
+
+    .footer_container__partner footer div > h3 {
+        font-size: .6em;
+    }
+
+    .footer_container__partner footer .nav_left ul li a {
+        font-size: .5em;
+        padding: 0;
+    }
+
+    .footer_container__partner footer .address_center p {
+        font-size: .5em;
+    }
+
+    .footer_container__partner footer .social_right {
+        right: 10%;
+    }
+
+    .footer_container__partner footer .social_right ul li a {
+        font-size: 25px;
+        padding: 0px;
+    }
+
+    .footer_container__partner footer .social_right a.none {
+        display: none;
+    }
+
+    .footer_container__partner footer .logo_top {
+        left: 35%;
+    }
+}

@@ -1127,17 +1127,26 @@ html {
 }
 
 @media(max-width:375px) {
+
+    .countdown_container {
+        left: 10%;
+    }
+
     .toggle_nav.active {
         margin-right: -35px;
     }
 
     .social li a {
-        transform: translateX(0px);
+        transform: translateX(-50px);
         transition: .2s;
     }
 
     .social.active {
         display: none;
+    }
+
+    .infos_page {
+        height: 90vh;
     }
 
     .carousel_slide div > img {
@@ -1149,6 +1158,18 @@ html {
         font-size: .5em;
         margin-left: 125px;
         position: relative;
+    }
+
+    .container_text {
+        left: 12%;
+    }
+
+    .footer_container footer .social_right ul li a {
+        font-size: 21px;
+    }
+
+    .footer_container {
+        height: 70vh;
     }
 }
 
